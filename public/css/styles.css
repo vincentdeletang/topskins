@@ -1,7 +1,123 @@
+body{
+  background-color: #616161;
+  color:white;
+}
+
+a{
+  color:white;
+}
+
+a:hover{
+  color:white;
+  -webkit-transition: color 1000ms linear;
+  -ms-transition: color 1000ms linear;
+  transition: color 1000ms linear;
+}
+
+button.button, a.button{
+ color:white;
+ background-color:#616161;
+ border:1px solid black;
+ border-radius:5px;
+ margin-right:10px;
+ padding:10px 10px 10px 10px;
+ text-decoration:none;
+ text-transform:uppercase;
+}
+
+button.button:hover, a.button:hover{
+  cursor:pointer;
+  color:white;
+  background-color:#212121;
+  -webkit-transition: color 1000ms linear;
+  -ms-transition: color 1000ms linear;
+  transition: color 1000ms linear;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.head{
+  width:60%;
+  margin:0 auto;
+  margin-bottom:20px;
+  padding-bottom:5px;
+  background-color: #212121;
+  border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  border-radius:10px;
+}
+
+.head>h1{
+  margin-bottom:0;
+}
+.head>h3{
+  margin-top:0;
+}
+
 .weapons{
+  text-align:center;
 }
 .weapons img {
   display: block;
   max-width:100%;
   height: auto;
+}
+
+.weapon-bg{
+  background-color: #212121;
+  border-radius:5%;
+  border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.container > .row {
+  margin-bottom:20px;
+}
+
+.category{
+  background-color: #424242;
+  padding-bottom:15px;
+  border-radius:5%;
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.category-btn{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.top-rank{
+  height:20px;
+  border-radius:5%;
+  padding-bottom:3px;
+  opacity:0.9;
+}
+
+.vote{
+  max-width:1200px;
+  margin:0 auto;
+  margin-top:50px;
+}
+
+.vote>.weapon-bg{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.first{
+  background-color: #4CAF50;
+}
+
+.second{
+  background-color: #FF9800;
+}
+
+.third{
+  background-color: #F44336;
+}
+
+.fourth{
+  background-color: #424242;
 }

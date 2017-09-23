@@ -11,15 +11,31 @@ use Zelenin\Elo\Match;
 
 class WeaponsController extends Controller
 {
+
     public function home(){
-      return view('home', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type','karambit')->take(4)->get()]);
+      $bayonets = Weapon::orderBy('elo', 'desc')->where('type','bayonet')->take(3)->get();
+      $bowies = Weapon::orderBy('elo', 'desc')->where('type','bowie')->take(3)->get();
+      $butterflies = Weapon::orderBy('elo', 'desc')->where('type','butterfly')->take(3)->get();
+      $falchions = Weapon::orderBy('elo', 'desc')->where('type','falchion')->take(3)->get();
+      $flips = Weapon::orderBy('elo', 'desc')->where('type','flip')->take(3)->get();
+      $guts = Weapon::orderBy('elo', 'desc')->where('type','gut')->take(3)->get();
+      $huntsmans = Weapon::orderBy('elo', 'desc')->where('type','huntsman')->take(3)->get();
+      $karambits = Weapon::orderBy('elo', 'desc')->where('type','karambit')->take(3)->get();
+      $m9s = Weapon::orderBy('elo', 'desc')->where('type','m9')->take(3)->get();
+      $shadowdaggers = Weapon::orderBy('elo', 'desc')->where('type','shadowdaggers')->take(3)->get();
+      return view('home', [
+        'karambits' => $karambits, 'bayonets' => $bayonets, 'bowies' => $bowies, 'butterflies' => $butterflies,
+        'falchions' => $falchions, 'flips' => $flips, 'guts' => $guts, 'huntsmans' => $huntsmans,
+        'm9s' => $m9s, 'shadowdaggers' => $shadowdaggers
+    ]);
     }
 
     public function vote(){
-      $weapon1 = Weapon::orderBy(DB::raw('RAND()'))->take(1)->first();
-      $weapon2 = Weapon::orderBy(DB::raw('RAND()'))->take(1)->first();
+      $w = Weapon::inRandomOrder()->take(1)->first();
+      $weapon1 = Weapon::inRandomOrder()->where('type',$w->type)->first();
+      $weapon2 = Weapon::inRandomOrder()->where('type',$w->type)->first();
       if($weapon2->id == $weapon1->id){
-        $weapon2 = Weapon::orderBy(DB::raw('RAND()'))->take(1)->first();
+        $weapon2 = Weapon::inRandomOrder()->where('type',$w->type)->first();
       }
       return view('vote', ['weapon1' => $weapon1, 'weapon2' => $weapon2]);
     }
@@ -47,7 +63,7 @@ class WeaponsController extends Controller
     }
 
     public function showCategory($weapon){
-      return view('weapons.category', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type','karambit')->get()]);
+      return view('weapons.category', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type', $weapon)->get()]);
     }
 
 }
