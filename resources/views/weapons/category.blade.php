@@ -1,16 +1,16 @@
 @extends('main')
 @section('content')
   <div class="container weapons">
-    <div class="head" style="padding-bottom:50px">
+    <div class="head">
       <h1 >All {{ $weapons[0]->type }}s</h1>
-      <h3>All {{ $weapons[0]->type }}s ranked by elo points</h3>
-      <a href="/vote" class="button">Vote for your favorite skins</a>
-      <a href="/" class="button">Return Home</a>
+      <h4>All {{ $weapons[0]->type }}s ranked by elo points.<br/><a href="/vote">Support</a> your favorite skins or
+      <a href="/">Return Home</a></h4>
     </div>
+    <hr/>
         <div class="row">
         @foreach ($weapons as $weapon)
           <!-- <div class="col-4"> -->
-          <div class="col-2 weapon-bg">
+          <div class="col-4 weapon-bg-category">
             @if ($loop->iteration == 1)<div class="top-rank first">#1</div>@endif
             @if ($loop->iteration == 2)<div class="top-rank second">#2</div>@endif
             @if ($loop->iteration == 3)<div class="top-rank third">#3</div>@endif
@@ -41,17 +41,21 @@
             @if ($loop->iteration == 28)<div class="top-rank fourth">#28</div>@endif
             @if ($loop->iteration == 29)<div class="top-rank fourth">#29</div>@endif
             @if ($loop->iteration == 30)<div class="top-rank fourth">#30</div>@endif
-
-            <p>{{ $weapon->name }}</p>
-            <img src="{{ asset($weapon->image) }}" alt=""></p>
-            <p>Elo : {{ $weapon->elo }}</p>
+            <div class="name">{{ $weapon->name }}</div>
+            <div class="{{ $weapon->quality }} quality">{{ $weapon->quality }}
+              @if($weapon->type=="ak47" || $weapon->type=="m4a1s" || $weapon->type=="m4a4" || $weapon->type=="awp") Rifle @endif
+              @if($weapon->type=="bayonet" || $weapon->type=="bowie" || $weapon->type=="butterfly" || $weapon->type=="falchion" || $weapon->type=="flip" || $weapon->type=="gut" || $weapon->type=="huntsman" || $weapon->type=="karambit" || $weapon->type=="m9" || $weapon->type=="shadowdagger")
+              Knife
+              @endif
+            </div>
+            <img src="{{ asset($weapon->image) }}" alt="">
+            Elo : {{ $weapon->elo }}
           </div>
           <!--</div>-->
-           @if ($loop->iteration % 6 == 0)
+           @if ($loop->iteration % 3 == 0)
             </div>
             <div class="row">
           @endif
         @endforeach
         </div>
-<a href="/" type="button">Return Home</a>
 @endsection

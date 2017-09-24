@@ -1,7 +1,15 @@
+*{
+  font-family: 'Domine', sans-serif;
+  font-size:16px;
+}
+
 body{
-  background-color: #616161;
+  background-color: #424242;
   color:white;
 }
+
+
+
 
 a{
   color:white;
@@ -19,7 +27,6 @@ button.button, a.button{
  background-color:#616161;
  border:1px solid black;
  border-radius:5px;
- margin-right:10px;
  padding:10px 10px 10px 10px;
  text-decoration:none;
  text-transform:uppercase;
@@ -29,46 +36,101 @@ button.button:hover, a.button:hover{
   cursor:pointer;
   color:white;
   background-color:#212121;
-  -webkit-transition: color 1000ms linear;
-  -ms-transition: color 1000ms linear;
-  transition: color 1000ms linear;
-  -webkit-transition: background-color 1000ms linear;
-  -ms-transition: background-color 1000ms linear;
-  transition: background-color 1000ms linear;
 }
 
-.head{
-  width:60%;
-  margin:0 auto;
+hr{
   margin-bottom:20px;
-  padding-bottom:5px;
-  background-color: #212121;
-  border-bottom: 0 none;
-	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  border-radius:10px;
 }
 
 .head>h1{
   margin-bottom:0;
 }
-.head>h3{
+.head>h4{
   margin-top:0;
 }
+.head>h4>a{
+  font-size:24px;
+}
+
+.name{
+  display:block;
+  height:50px;
+  font-size:20px;
+}
+
+.quality{
+  border-radius:5px;
+  color:black;
+  width:80%;
+  margin:0 auto;
+  margin-top:-10px;
+}
+
+.Covert{
+  background-color: #eb4b4b;
+}
+
+.Classified{
+    background-color:#d32ee6;
+}
+
+.Restricted{
+    background-color:#8847ff;
+}
+
+.Mil-Spec{
+    background-color:#4b69ff;
+}
+
+.Industrial{
+  background-color: #5e98d9;
+}
+
+.Consumer{
+  background-color: #b0c3d9;
+}
+
+.Vanilla{
+  background-color: grey;
+}
+
 
 .weapons{
   text-align:center;
 }
 .weapons img {
   display: block;
-  max-width:100%;
-  height: auto;
+  max-width:95%;
+  margin:0 auto;
 }
 
 .weapon-bg{
   background-color: #212121;
+  border-radius:2%;
+  border:1px solid black;
+  border-bottom: 0 none;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  padding-bottom:20px;
+}
+
+.weapon-bg>img{
+  padding-top:30px;
+  padding-bottom:30px;
+  width:100%;
+}
+
+.weapon-bg-category{
+  background-color: #212121;
   border-radius:5%;
   border-bottom: 0 none;
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  padding-bottom:20px;
+}
+
+.weapon-bg-category>img{
+  padding-top:30px;
+  padding-bottom:30px;
+  width:100%;
 }
 
 .container > .row {
@@ -76,11 +138,7 @@ button.button:hover, a.button:hover{
 }
 
 .category{
-  background-color: #424242;
-  padding-bottom:15px;
-  border-radius:5%;
-  border-bottom: 0 none;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+
 }
 
 .category-btn{
@@ -93,6 +151,7 @@ button.button:hover, a.button:hover{
   border-radius:5%;
   padding-bottom:3px;
   opacity:0.9;
+  margin-bottom:10px;
 }
 
 .vote{
