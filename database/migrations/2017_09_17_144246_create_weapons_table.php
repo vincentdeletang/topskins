@@ -17,7 +17,13 @@ class CreateWeaponsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('image');
-            $table->enum('type', ['bayonet','bowie','butterfly','falchion','flip','gut','huntsman','karambit','m9','shadowdaggers','ak47','m4a1s','m4a4','awp']);
+            $table->enum('type', ['bayonet','bowie','butterfly','falchion','flip','gut','huntsman','karambit','m9','shadowdaggers',
+            'ak47','m4a1s','m4a4','awp','aug','famas','g3sg1','galil','scar20','sg553','ssg08',
+            'cz75','deagle','dual','fiveseven','glock','p2000','p250','r8','tec9','usps',
+            'mac10','mp7','mp9','ppbizon','p90','ump45',
+            'mag7','nova','sawedoff','xm1014','m249','negev'
+            ]);
+            $table->enum('category', ['pistol', 'rifle', 'smg', 'heavy', 'knife']);
             $table->enum('quality', ['Contraband', 'Covert', 'Classified', 'Restricted', 'Mil-Spec', 'Industrial' , 'Consumer', 'Vanilla'])->nullable();
             $table->integer('elo')->default('1200');
             $table->timestamps();

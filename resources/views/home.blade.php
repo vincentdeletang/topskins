@@ -9,57 +9,8 @@
        <!-- <a href="/vote">Vote for your favorite skins</a> -->
      </div>
      <hr/>
-     <!-- START FIRST ROW -->
      <div class="row">
-       <div class="col-4 category">
-         @foreach ($ak47s as $ak47)
-         <div class="weapon-bg">
-           <div class="top-rank first">#1</div>
-           <div class="name">{{ $ak47->name }}</div>
-           <div class="{{ $ak47->quality }} quality">{{ $ak47->quality }} Rifle</div>
-           <img src="{{ asset($ak47->image) }}" alt="">
-            <a href="weapon/ak47" class="button">all {{ $ak47->type }}s</a>
-         </div>
-         @endforeach
-       </div>
-       <div class="col-4 category">
-         @foreach ($m4a4s as $m4a4)
-         <div class="weapon-bg">
-           <div class="top-rank first">#1</div>
-           <div class="name">{{ $m4a4->name }}</div>
-           <div class="{{ $m4a4->quality }} quality">{{ $m4a4->quality }} Rifle</div>
-           <img src="{{ asset($m4a4->image) }}" alt="">
-            <a href="weapon/m4a4" class="button">all {{ $m4a4->type }}s</a>
-         </div>
-         @endforeach
-       </div>
-       <div class="col-4 category">
-         @foreach ($awps as $awp)
-           <div class="weapon-bg">
-             <div class="top-rank first">#1</div>
-             <div class="name">{{ $awp->name }}</div>
-             <div class="{{ $awp->quality }} quality">{{ $awp->quality }} Rifle</div>
-             <img src="{{ asset($awp->image) }}" alt="">
-             <a href="weapon/awp" class="button">all awps</a>
-           </div>
-         @endforeach
-     </div>
-   </div>
-     <!-- END FIRST ROW -->
-
-     <div class="row">
-       <div class="col-4 category">
-         @foreach ($m4a1ss as $m4a1s)
-           <div class="weapon-bg">
-             <div class="top-rank first">#1</div>
-             <div class="name">{{ $m4a1s->name }}</div>
-             <div class="{{ $m4a1s->quality }} quality">{{ $m4a1s->quality }} Rifle</div>
-             <img src="{{ asset($m4a1s->image) }}" alt="">
-             <a href="weapon/m4a1s" class="button">all {{ $m4a1s->type }}s</a>
-           </div>
-         @endforeach
-       </div>
-       <div class="col-4 category">
+       <div class="col-3 category">
          @foreach ($karambits as $karambit)
            <div class="weapon-bg">
             <div class="top-rank first">#1</div>
@@ -70,7 +21,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-3 category">
          @foreach ($m9s as $m9)
            <div class="weapon-bg">
              <div class="top-rank first">#1</div>
@@ -81,82 +32,175 @@
            </div>
          @endforeach
        </div>
-     </div>
-
-    <div class="row">
-     <div class="col-4 category">
-       @foreach ($bayonets as $bayonet)
-       <div class="weapon-bg">
-         <div class="top-rank first">#1</div>
-         <div class="name">{{ $bayonet->name }}</div>
-         <div class="{{ $bayonet->quality }} quality">{{ $bayonet->quality }} Knife</div>
-         <img src="{{ asset($bayonet->image) }}" alt="">
-          <a href="weapon/bayonet" class="button">all {{ $bayonet->type }}s</a>
-       </div>
-       @endforeach
-     </div>
-     <div class="col-4 category">
-       @foreach ($bowies as $bowie)
+       <div class="col-3 category">
+         @foreach ($bayonets as $bayonet)
          <div class="weapon-bg">
            <div class="top-rank first">#1</div>
-           <div class="name">{{ $bowie->name }}</div>
-           <div class="{{ $bowie->quality }} quality">{{ $bowie->quality }} Knife</div>
-           <img src="{{ asset($bowie->image) }}" alt="">
-           <a href="weapon/bowie" class="button">all {{ $bowie->type }}s</a>
+           <div class="name">{{ $bayonet->name }}</div>
+           <div class="{{ $bayonet->quality }} quality">{{ $bayonet->quality }} Knife</div>
+           <img src="{{ asset($bayonet->image) }}" alt="">
+            <a href="weapon/bayonet" class="button">all {{ $bayonet->type }}s</a>
          </div>
-       @endforeach
-     </div>
-     <div class="col-4 category">
-       @foreach ($butterflies as $butterfly)
-       <div class="weapon-bg">
-         <div class="top-rank first">#1</div>
-         <div class="name">{{ $butterfly->name }}</div>
-         <div class="{{ $butterfly->quality }} quality">{{ $butterfly->quality }} Knife</div>
-         <img src="{{ asset($butterfly->image) }}" alt="">
-         <a href="weapon/butterfly" class="button">all {{ $butterfly->type }}s</a>
+         @endforeach
        </div>
+       <div class="col-3 category">
+         @foreach ($butterflies as $butterfly)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $butterfly->name }}</div>
+             <div class="{{ $butterfly->quality }} quality">{{ $butterfly->quality }} Knife</div>
+             <img src="{{ asset($butterfly->image) }}" alt="">
+             <a href="weapon/butterfly" class="button">all {{ $butterfly->type }}s</a>
+           </div>
+         @endforeach
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-3 category">
+         @foreach ($ak47s as $ak47)
+         <div class="weapon-bg">
+           <div class="top-rank first">#1</div>
+           <div class="name">{{ $ak47->name }}</div>
+           <div class="{{ $ak47->quality }} quality">{{ $ak47->quality }} Rifle</div>
+           <img src="{{ asset($ak47->image) }}" alt="">
+            <a href="weapon/ak47" class="button">all {{ $ak47->type }}s</a>
+         </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($m4a4s as $m4a4)
+         <div class="weapon-bg">
+           <div class="top-rank first">#1</div>
+           <div class="name">{{ $m4a4->name }}</div>
+           <div class="{{ $m4a4->quality }} quality">{{ $m4a4->quality }} Rifle</div>
+           <img src="{{ asset($m4a4->image) }}" alt="">
+            <a href="weapon/m4a4" class="button">all {{ $m4a4->type }}s</a>
+         </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($awps as $awp)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $awp->name }}</div>
+             <div class="{{ $awp->quality }} quality">{{ $awp->quality }} Rifle</div>
+             <img src="{{ asset($awp->image) }}" alt="">
+             <a href="weapon/awp" class="button">all awps</a>
+           </div>
+         @endforeach
+     </div>
+     <div class="col-3 category">
+       @foreach ($m4a1ss as $m4a1s)
+         <div class="weapon-bg">
+           <div class="top-rank first">#1</div>
+           <div class="name">{{ $m4a1s->name }}</div>
+           <div class="{{ $m4a1s->quality }} quality">{{ $m4a1s->quality }} Rifle</div>
+           <img src="{{ asset($m4a1s->image) }}" alt="">
+           <a href="weapon/m4a1s" class="button">all {{ $m4a1s->type }}s</a>
+         </div>
        @endforeach
      </div>
    </div>
 
      <div class="row">
-       <div class="col-4 category">
-         @foreach ($falchions as $falchion)
+       <div class="col-3 category">
+         @foreach ($uspss as $usps)
            <div class="weapon-bg">
              <div class="top-rank first">#1</div>
-             <div class="name">{{ $falchion->name }}</div>
-             <div class="{{ $falchion->quality }} quality">{{ $falchion->quality }} Knife</div>
-             <img src="{{ asset($falchion->image) }}" alt="">
-             <a href="weapon/falchion" class="button">all {{ $falchion->type }}s</a>
+             <div class="name">{{ $usps->name }}</div>
+             <div class="{{ $usps->quality }} quality">{{ $usps->quality }} Knife</div>
+             <img src="{{ asset($usps->image) }}" alt="">
+             <a href="weapon/usps" class="button">all {{ $usps->type }}s</a>
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
-         @foreach ($flips as $flip)
-         <div class="weapon-bg">
-           <div class="top-rank first">#1</div>
-           <div class="name">{{ $flip->name }}</div>
-           <div class="{{ $flip->quality }} quality">{{ $flip->quality }} Knife</div>
-           <img src="{{ asset($flip->image) }}" alt="">
-           <a href="weapon/flip" class="button">all {{ $flip->type }}s</a>
-         </div>
-         @endforeach
-       </div>
-       <div class="col-4 category">
-         @foreach ($guts as $gut)
+       <div class="col-3 category">
+         @foreach ($glocks as $glock)
            <div class="weapon-bg">
              <div class="top-rank first">#1</div>
-             <div class="name">{{ $gut->name }}</div>
-             <div class="{{ $gut->quality }} quality">{{ $gut->quality }} Knife</div>
-             <img src="{{ asset($gut->image) }}" alt="">
-            <a href="weapon/gut" class="button">all {{ $gut->type }}s</a>
+             <div class="name">{{ $glock->name }}</div>
+             <div class="{{ $glock->quality }} quality">{{ $glock->quality }} Knife</div>
+             <img src="{{ asset($glock->image) }}" alt="">
+             <a href="weapon/glock" class="button">all {{ $glock->type }}s</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($deagles as $deagle)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $deagle->name }}</div>
+             <div class="{{ $deagle->quality }} quality">{{ $deagle->quality }} Knife</div>
+             <img src="{{ asset($deagle->image) }}" alt="">
+             <a href="weapon/deagle" class="button">all {{ $deagle->type }}s</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($p250s as $p250)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $p250->name }}</div>
+             <div class="{{ $p250->quality }} quality">{{ $p250->quality }} Knife</div>
+             <img src="{{ asset($p250->image) }}" alt="">
+             <a href="weapon/p250" class="button">all {{ $p250->type }}s</a>
            </div>
          @endforeach
        </div>
      </div>
+     <!-- FIN 2ND ROW -->
+
 
      <div class="row">
-       <div class="col-4 category">
+     <div class="col-3 category">
+       @foreach ($bowies as $bowie)
+       <div class="weapon-bg">
+         <div class="top-rank first">#1</div>
+         <div class="name">{{ $bowie->name }}</div>
+         <div class="{{ $bowie->quality }} quality">{{ $bowie->quality }} Knife</div>
+         <img src="{{ asset($bowie->image) }}" alt="">
+         <a href="weapon/bowie" class="button">all {{ $bowie->type }}s</a>
+       </div>
+       @endforeach
+     </div>
+     <div class="col-3 category">
+       @foreach ($falchions as $falchion)
+         <div class="weapon-bg">
+           <div class="top-rank first">#1</div>
+           <div class="name">{{ $falchion->name }}</div>
+           <div class="{{ $falchion->quality }} quality">{{ $falchion->quality }} Knife</div>
+           <img src="{{ asset($falchion->image) }}" alt="">
+           <a href="weapon/falchion" class="button">all {{ $falchion->type }}s</a>
+         </div>
+       @endforeach
+     </div>
+     <div class="col-3 category">
+       @foreach ($flips as $flip)
+       <div class="weapon-bg">
+         <div class="top-rank first">#1</div>
+         <div class="name">{{ $flip->name }}</div>
+         <div class="{{ $flip->quality }} quality">{{ $flip->quality }} Knife</div>
+         <img src="{{ asset($flip->image) }}" alt="">
+         <a href="weapon/flip" class="button">all {{ $flip->type }}s</a>
+       </div>
+       @endforeach
+     </div>
+     <div class="col-3 category">
+       @foreach ($guts as $gut)
+         <div class="weapon-bg">
+           <div class="top-rank first">#1</div>
+           <div class="name">{{ $gut->name }}</div>
+           <div class="{{ $gut->quality }} quality">{{ $gut->quality }} Knife</div>
+           <img src="{{ asset($gut->image) }}" alt="">
+          <a href="weapon/gut" class="button">all {{ $gut->type }}s</a>
+         </div>
+       @endforeach
+     </div>
+   </div>
+
+     <div class="row">
+       <div class="col-3 category">
          @foreach ($huntsmans as $huntsman)
            <div class="weapon-bg">
              <div class="top-rank first">#1</div>
@@ -167,7 +211,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-3 category">
          @foreach ($shadowdaggers as $shadowdagger)
            <div class="weapon-bg">
              <div class="top-rank first">#1</div>
@@ -178,10 +222,158 @@
            </div>
          @endforeach
        </div>
+       <div class="col-3 category">
+         @foreach ($galils as $galil)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $galil->name }}</div>
+             <div class="{{ $galil->quality }} quality">{{ $galil->quality }} Knife</div>
+             <img src="{{ asset($galil->image) }}" alt="">
+             <a href="weapon/galil" class="button">all {{ $galil->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($famass as $famas)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $famas->name }}</div>
+             <div class="{{ $famas->quality }} quality">{{ $famas->quality }} Knife</div>
+             <img src="{{ asset($famas->image) }}" alt="">
+             <a href="weapon/famas" class="button">all {{ $famas->type }}</a>
+           </div>
+         @endforeach
+       </div>
      </div>
 
      <div class="row">
+       <div class="col-3 category">
+         @foreach ($cz75s as $cz75)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $cz75->name }}</div>
+             <div class="{{ $cz75->quality }} quality">{{ $cz75->quality }} Knife</div>
+             <img src="{{ asset($cz75->image) }}" alt="">
+             <a href="weapon/cz75" class="button">all {{ $cz75->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($duals as $dual)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $dual->name }}</div>
+             <div class="{{ $dual->quality }} quality">{{ $dual->quality }} Knife</div>
+             <img src="{{ asset($dual->image) }}" alt="">
+             <a href="weapon/dual" class="button">all {{ $dual->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($fivesevens as $fiveseven)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $fiveseven->name }}</div>
+             <div class="{{ $fiveseven->quality }} quality">{{ $fiveseven->quality }} Knife</div>
+             <img src="{{ asset($fiveseven->image) }}" alt="">
+             <a href="weapon/fiveseven" class="button">{{ $fiveseven->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($p2000s as $p2000)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $p2000->name }}</div>
+             <div class="{{ $p2000->quality }} quality">{{ $p2000->quality }} Knife</div>
+             <img src="{{ asset($p2000->image) }}" alt="">
+             <a href="weapon/p2000" class="button">{{ $p2000->type }}</a>
+           </div>
+         @endforeach
+       </div>
+     </div>
 
+     <div class="row">
+       <div class="col-3 category">
+         @foreach ($r8s as $r8)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $r8->name }}</div>
+             <div class="{{ $r8->quality }} quality">{{ $r8->quality }} Knife</div>
+             <img src="{{ asset($r8->image) }}" alt="">
+             <a href="weapon/r8" class="button">{{ $r8->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($tec9s as $tec9)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $tec9->name }}</div>
+             <div class="{{ $tec9->quality }} quality">{{ $tec9->quality }} Knife</div>
+             <img src="{{ asset($tec9->image) }}" alt="">
+             <a href="weapon/tec9" class="button">{{ $tec9->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($augs as $aug)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $aug->name }}</div>
+             <div class="{{ $aug->quality }} quality">{{ $aug->quality }} Knife</div>
+             <img src="{{ asset($aug->image) }}" alt="">
+             <a href="weapon/aug" class="button">{{ $aug->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($g3sg1s as $g3sg1)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $g3sg1->name }}</div>
+             <div class="{{ $g3sg1->quality }} quality">{{ $g3sg1->quality }} Knife</div>
+             <img src="{{ asset($g3sg1->image) }}" alt="">
+             <a href="weapon/g3sg1" class="button">{{ $g3sg1->type }}</a>
+           </div>
+         @endforeach
+       </div>
+     </div>
+
+     <div class="row">
+       <div class="col-3 category">
+         @foreach ($scar20s as $scar20)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $scar20->name }}</div>
+             <div class="{{ $scar20->quality }} quality">{{ $scar20->quality }} Knife</div>
+             <img src="{{ asset($scar20->image) }}" alt="">
+             <a href="weapon/scar20" class="button">{{ $scar20->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($sg553s as $sg553)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $sg553->name }}</div>
+             <div class="{{ $sg553->quality }} quality">{{ $sg553->quality }} Knife</div>
+             <img src="{{ asset($sg553->image) }}" alt="">
+             <a href="weapon/sg553" class="button">{{ $sg553->type }}</a>
+           </div>
+         @endforeach
+       </div>
+       <div class="col-3 category">
+         @foreach ($ssg08s as $ssg08)
+           <div class="weapon-bg">
+             <div class="top-rank first">#1</div>
+             <div class="name">{{ $ssg08->name }}</div>
+             <div class="{{ $ssg08->quality }} quality">{{ $ssg08->quality }} Knife</div>
+             <img src="{{ asset($ssg08->image) }}" alt="">
+             <a href="weapon/ssg08" class="button">{{ $ssg08->type }}</a>
+           </div>
+         @endforeach
+       </div>
      </div>
 
    </div>
