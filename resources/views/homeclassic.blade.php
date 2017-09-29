@@ -1,22 +1,18 @@
 @extends('main')
 
 @section('content')
-<div class="head">
-  <h1>SKINRANK</h1>
-  <a href="/" style="font-weight:bold">HOME</a> |
-  <a href="/vote">VOTE</a>
-</div>
 <div class="weapons">
   <div class="container">
-    <div class="disclaimer">
-       <h2>Check the hottest skins voted by the community<br/> and <a href="/vote">vote</a> for your favorite ones !</h2>
+    <div class="head">
+       <h1>SkinRank.com</h1>
+       <h4>Check which are the most liked skins in the community<br/> and <a href="/vote">vote</a> for your favorite ones !</h4>
+       <!-- <a href="/vote">Vote for your skins</a> -->
      </div>
-<div class="row">
-  <div class="col-6">
-     <div class="category">
+
+     <div class="category knives">
        <h3>Knives</h3>
        <div class="row">
-         <div class="col-4 category">
+         <div class="col-2 category">
            @foreach ($karambits as $karambit)
            <div class="weapon-bg">
             <div class="name">{{ $karambit->name }}</div>
@@ -26,7 +22,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($m9s as $m9)
            <div class="weapon-bg">
              <div class="name">{{ $m9->name }}</div>
@@ -36,7 +32,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($bayonets as $bayonet)
          <div class="weapon-bg">
            <div class="name">{{ $bayonet->name }}</div>
@@ -46,9 +42,7 @@
          </div>
          @endforeach
        </div>
-     </div>
-     <div class="row">
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($butterflies as $butterfly)
            <div class="weapon-bg">
              <div class="name">{{ $butterfly->name }}</div>
@@ -58,7 +52,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($huntsmans as $huntsman)
            <div class="weapon-bg">
              <div class="name">{{ $huntsman->name }}</div>
@@ -68,7 +62,7 @@
            </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($flips as $flip)
          <div class="weapon-bg">
            <div class="name">{{ $flip->name }}</div>
@@ -78,9 +72,10 @@
          </div>
          @endforeach
        </div>
-   </div>
-   <div class="row">
-     <div class="col-4 category">
+     </div>
+
+     <div class="row">
+     <div class="col-2 category">
        @foreach ($bowies as $bowie)
        <div class="weapon-bg">
          <div class="name">{{ $bowie->name }}</div>
@@ -90,7 +85,7 @@
        </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($falchions as $falchion)
          <div class="weapon-bg">
            <div class="name">{{ $falchion->name }}</div>
@@ -100,7 +95,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($guts as $gut)
          <div class="weapon-bg">
            <div class="name">{{ $gut->name }}</div>
@@ -110,10 +105,7 @@
          </div>
        @endforeach
      </div>
-
-   </div>
-   <div class="row">
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($shadowdaggers as $shadowdagger)
          <div class="weapon-bg">
            <div class="name">{{ $shadowdagger->name }}</div>
@@ -125,13 +117,12 @@
      </div>
    </div>
  </div>
-</div>
 
-<div class="col-6">
- <div class="category">
+
+ <div class="category rifles">
    <h3>Rifles</h3>
      <div class="row">
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($ak47s as $ak47)
          <div class="weapon-bg">
            <div class="name">{{ $ak47->name }}</div>
@@ -141,7 +132,7 @@
          </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($m4a4s as $m4a4)
          <div class="weapon-bg">
            <div class="name">{{ $m4a4->name }}</div>
@@ -151,7 +142,7 @@
          </div>
          @endforeach
        </div>
-       <div class="col-4 category">
+       <div class="col-2 category">
          @foreach ($awps as $awp)
            <div class="weapon-bg">
              <div class="name">{{ $awp->name }}</div>
@@ -161,9 +152,7 @@
            </div>
          @endforeach
      </div>
-   </div>
-   <div class="row">
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($m4a1ss as $m4a1s)
          <div class="weapon-bg">
            <div class="name">{{ $m4a1s->name }}</div>
@@ -173,7 +162,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($galils as $galil)
          <div class="weapon-bg">
            <div class="name">{{ $galil->name }}</div>
@@ -183,7 +172,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($famass as $famas)
          <div class="weapon-bg">
            <div class="name">{{ $famas->name }}</div>
@@ -195,7 +184,7 @@
      </div>
    </div>
    <div class="row">
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($ssg08s as $ssg08)
          <div class="weapon-bg">
            <div class="name">{{ $ssg08->name }}</div>
@@ -205,7 +194,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($augs as $aug)
          <div class="weapon-bg">
            <div class="name">{{ $aug->name }}</div>
@@ -215,7 +204,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($g3sg1s as $g3sg1)
          <div class="weapon-bg">
            <div class="name">{{ $g3sg1->name }}</div>
@@ -225,9 +214,7 @@
          </div>
        @endforeach
      </div>
-   </div>
-     <div class="row">
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($scar20s as $scar20)
          <div class="weapon-bg">
            <div class="name">{{ $scar20->name }}</div>
@@ -237,7 +224,7 @@
          </div>
        @endforeach
      </div>
-     <div class="col-4 category">
+     <div class="col-2 category">
        @foreach ($sg553s as $sg553)
          <div class="weapon-bg">
            <div class="name">{{ $sg553->name }}</div>
@@ -249,10 +236,8 @@
      </div>
    </div>
  </div>
-</div>
-</div>
-<div class="row">
- <div class="col-12 category">
+
+ <div class="category pistols">
    <h3>Pistols</h3>
      <div class="row">
        <div class="col-2 category">
@@ -316,7 +301,8 @@
          @endforeach
        </div>
      </div>
-     <div class="row">
+
+     <div class="row pistols">
        <div class="col-2 category">
          @foreach ($tec9s as $tec9)
            <div class="weapon-bg">
@@ -359,16 +345,9 @@
        </div>
      </div>
 </div>
-</div>
 
-<div class="row">
-  <div class="col-6">
 
-  </div>
-  <div class="col-6">
 
-  </div>
-</div>
 
    </div>
 </div>

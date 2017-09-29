@@ -3,5 +3,6 @@
  @include('assets.header')
 <body>
  @yield('content')
+ @include('assets.footer')
 </body>
 </html>

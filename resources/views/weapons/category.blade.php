@@ -1,16 +1,19 @@
 @extends('main')
 @section('content')
+<div class="head">
+  <h1>SKINRANK</h1>
+  <a href="/" style="font-weight:bold">HOME</a> |
+  <a href="/vote">VOTE</a>
+</div>
   <div class="container weapons">
-    <div class="head">
-      <h1 >All {{ $weapons[0]->type }}s</h1>
-      <h4>All {{ $weapons[0]->type }}s ranked by elo points.<br/><a href="/vote">Support</a> your favorite skins or
-      <a href="/">Return Home</a></h4>
+    <div class="disclaimer">
+      <h2>All {{ $weapons[0]->type }}s ranked by elo points.<br/><a href="/vote">Support</a> your favorite skins or
+      <a href="/">Return Home</a></h2>
     </div>
-    <hr/>
-        <div class="row">
+        <div class="row vote">
         @foreach ($weapons as $weapon)
           <!-- <div class="col-4"> -->
-          <div class="col-4 weapon-bg-category">
+          <div class="col-3 weapon-bg-category">
             @if ($loop->iteration == 1)<div class="top-rank first">#1</div>@endif
             @if ($loop->iteration == 2)<div class="top-rank second">#2</div>@endif
             @if ($loop->iteration == 3)<div class="top-rank third">#3</div>@endif
@@ -42,19 +45,14 @@
             @if ($loop->iteration == 29)<div class="top-rank fourth">#29</div>@endif
             @if ($loop->iteration == 30)<div class="top-rank fourth">#30</div>@endif
             <div class="name">{{ $weapon->name }}</div>
-            <div class="{{ $weapon->quality }} quality">{{ $weapon->quality }}
-              @if($weapon->type=="ak47" || $weapon->type=="m4a1s" || $weapon->type=="m4a4" || $weapon->type=="awp") Rifle @endif
-              @if($weapon->type=="bayonet" || $weapon->type=="bowie" || $weapon->type=="butterfly" || $weapon->type=="falchion" || $weapon->type=="flip" || $weapon->type=="gut" || $weapon->type=="huntsman" || $weapon->type=="karambit" || $weapon->type=="m9" || $weapon->type=="shadowdagger")
-              Knife
-              @endif
-            </div>
+            <div class="{{ $weapon->quality }} quality">{{ $weapon->quality }} {{ ucfirst($weapon->category) }}</div>
             <img src="{{ asset($weapon->image) }}" alt="">
             Elo : {{ $weapon->elo }}
           </div>
           <!--</div>-->
-           @if ($loop->iteration % 3 == 0)
+           @if ($loop->iteration % 4 == 0)
             </div>
-            <div class="row">
+            <div class="row vote">
           @endif
         @endforeach
         </div>
