@@ -93,16 +93,17 @@ class WeaponsController extends Controller
 
     public function storeVote(Request $request){
       if($request->isMethod('post')){
-        $w1 = Weapon::find($request->weapon1);
-        $w2 = Weapon::find($request->weapon2);
+        $data = $request->all();
+        $w1 = Weapon::find($data['weapon1']);
+        $w2 = Weapon::find($data['weapon2']);
         $weapon1 = new Player($w1->elo);
         $weapon2 = new Player($w2->elo);
 
         $match = new Match($weapon1, $weapon2);
-        if($request->win=="weapon1"){
+        if($data['win']=="weapon1"){
           $match->setScore(1,0)->setK(32)->count();
         }
-        if($request->win=="weapon2"){
+        if($data['win']=="weapon2"){
           $match->setScore(0,1)->setK(32)->count();
         }
         $w1->elo = $weapon1->getRating();

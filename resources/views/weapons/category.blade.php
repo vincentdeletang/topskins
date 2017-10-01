@@ -2,13 +2,11 @@
 @section('content')
 <div class="head">
   <h1>SKINRANK</h1>
-  <a href="/" style="font-weight:bold">HOME</a> |
-  <a href="/vote">VOTE</a>
 </div>
   <div class="container weapons">
     <div class="disclaimer">
       <h2>All {{ $weapons[0]->type }}s ranked by elo points.<br/><a href="/vote">Support</a> your favorite skins or
-      <a href="/">Return Home</a></h2>
+      return <a href="/">Home</a></h2>
     </div>
         <div class="row vote">
         @foreach ($weapons as $weapon)
@@ -56,4 +54,7 @@
           @endif
         @endforeach
         </div>
+        <a href="/">HOME</a> |
+        <a href="/vote">VOTE</a>
+      </div>
 @endsection
