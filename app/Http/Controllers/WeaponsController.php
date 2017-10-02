@@ -118,4 +118,9 @@ class WeaponsController extends Controller
       return view('weapons.category', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type', $weapon)->get()]);
     }
 
+    public function showWeapon($weaponId){
+      $weapon = Weapon::find($weaponId);
+      return view('weapons.single', ['weapon' => $weapon]);
+    }
+
 }

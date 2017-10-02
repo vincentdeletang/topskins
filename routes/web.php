@@ -17,3 +17,5 @@ Route::get('/vote', 'WeaponsController@vote');
 
 Route::post('/storeVote', 'WeaponsController@storeVote');
 Route::get('/{weapon}', 'WeaponsController@showCategory');
+
+Route::get('/weapon/{weaponId}', 'WeaponsController@showWeapon');

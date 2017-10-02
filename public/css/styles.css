@@ -245,7 +245,6 @@ h6 {
 .weapon-bg-vote>img{
   width:90%;
   margin-top:20px;
-  margin-bottom:20px;
 }
 
 .first{
@@ -284,4 +283,22 @@ h6 {
   background-color: #212121;
   text-align:center;
   width: 100%;
+}
+
+.elo{
+  font-size:1.2em;
+  width:50%;
+  margin:0 auto;
+  background-color: #263238;
+  border-radius:2%;
+  border-bottom: 0 none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  margin-bottom:10px;
+  transition: background 1s linear;
+ -webkit-transition: background 1s linear;
+ -moz-transition: background 1s linear;
+}
+
+.elo>span{
+  font-size:1em;
 }

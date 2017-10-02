@@ -14,7 +14,6 @@
 <div class="row">
   <div class="col-6">
      <div class="category">
-
        <div class="row">
          <div class="col-4 category">
            @foreach ($karambits as $karambit)
