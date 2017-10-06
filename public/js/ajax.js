@@ -4,7 +4,6 @@ $.ajaxSetup({
 	        }
 });
 
-
 $(document).ready(function(){
 	$(document).on("click", '#fw1', function(event) {
 			$('#fw1').submit(function(e){
@@ -22,18 +21,19 @@ $(document).ready(function(){
 					cache: false,
 	        dataType: "html",
 					beforeSend: function( xhr ) {
-						$('#fw1').hide("fast");
-						$('#fw2').hide("fast");
+							$('#btn1').attr('disabled',true);
+							$('#btn2').attr('disabled',true);
+							$('#btn3').attr('disabled',true);
 							$('#elo1').css("background-color","#4CAF50");
 							$('#elo2').css("background-color","#F44336");
 							$('#w1up').show();
 							$('#w2up').show();
-							setTimeout(function(){ $( "#w1scoreup" ).load( "weapon/"+weap1 );$('#w1scoreup').show();  }, 100);
-							setTimeout(function(){ $( "#w2scoredown" ).load( "weapon/"+weap2 );$('#w2scoredown').show();  }, 100);
+							setTimeout(function(){ $( "#w1scoreup" ).load( "weapon/"+weap1 );$('#w1scoreup').show();  }, 500);
+							setTimeout(function(){ $( "#w2scoredown" ).load( "weapon/"+weap2 );$('#w2scoredown').show();  }, 500);
 					},
 					success:
 					function(data){
-						setTimeout(function(){ $( "#vote" ).load( "vote div#vote" ) }, 2000);
+						setTimeout(function(){ $( "#vote" ).load( "vote div#vote" ) }, 1500);
 						}
 				});
 				return false;
@@ -55,20 +55,40 @@ $(document).ready(function(){
 				cache: false,
 				dataType: "html",
 				beforeSend: function( xhr ) {
-					$('#fw1').hide("fast");
-					$('#fw2').hide("fast");
+					$('#btn1').attr('disabled',true);
+					$('#btn2').attr('disabled',true);
+					$('#btn3').attr('disabled',true);
 					$('#elo2').css("background-color","#4CAF50");
 					$('#elo1').css("background-color","#F44336");
 					$('#w1up').show();
 					$('#w2up').show()
-					setTimeout(function(){ $( "#w1scoredown" ).load( "weapon/"+weap1 );$('#w1scoredown').show();  }, 100);
-					setTimeout(function(){ $( "#w2scoreup" ).load( "weapon/"+weap2 );$('#w2scoreup').show();  }, 100);
+					setTimeout(function(){ $( "#w1scoredown" ).load( "weapon/"+weap1 );$('#w1scoredown').show();  }, 500);
+					setTimeout(function(){ $( "#w2scoreup" ).load( "weapon/"+weap2 );$('#w2scoreup').show();  }, 500);
 				},
 				success:
 				function(data){
-					setTimeout(function(){ $( "#vote" ).load( "vote div#vote" ) }, 2000);
+					setTimeout(function(){ $( "#vote" ).load( "vote div#vote" ) }, 1500);
 					}
 			});
+			return false;
+		});
+	});
+
+	$(document).on("click", "#fw3", function(event){
+		$('#fw3').submit(function(e){
+			e.preventDefault();
+			var weap1 = $('#w13').val();
+			var weap2 = $('#w23').val();
+			$('#btn1').attr('disabled',true);
+			$('#btn2').attr('disabled',true);
+			$('#btn3').attr('disabled',true);
+			$('#elo2').css("background-color","#FF9800");
+			$('#elo1').css("background-color","#FF9800");
+			$('#w1up').show();
+			$('#w2up').show()
+			setTimeout(function(){ $( "#w1scoredown" ).load( "weapon/"+weap1 );$('#w1scoredown').show();  }, 500);
+			setTimeout(function(){ $( "#w2scoreup" ).load( "weapon/"+weap2 );$('#w2scoreup').show();  }, 500);
+			setTimeout(function(){ $( "#vote" ).load( "vote div#vote" ) }, 1500);
 			return false;
 		});
 	});

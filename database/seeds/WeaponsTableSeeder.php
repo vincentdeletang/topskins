@@ -3393,6 +3393,1561 @@ class WeaponsTableSeeder extends Seeder
         'image' => 'img/smg/mac10/mac10_vanilla.png'
       ]);
 
+      /* MP7 */
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Nemesis',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/mp7/mp7_nemesis.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Impire',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp7/mp7_impire.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Special Delivery',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp7/mp7_special_delivery.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Ocean Foam',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp7/mp7_ocean_foam.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Akoben',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_akoben.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Cirrus',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_cirrus.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Armor Core',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_armor_core.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Urban Hazard',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_urban_hazard.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Skulls',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_skulls.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Full Stop',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_full_stop.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Anodized Navy',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_anodized_navy.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Whiteout',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp7/mp7_whiteout.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Gunsmoke',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/mp7/mp7_gunsmoke.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Orange Peel',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/mp7/mp7_orange_peel.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Asterion',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp7/mp7_asterion.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Olive Plaid',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp7/mp7_olive_plaid.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Forest DDPAT',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp7/mp7_forest_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Army Recon',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp7/mp7_army_recon.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7 | Groundwater',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp7/mp7_groundwater.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP7',
+        'type' => 'mp7',
+        'category' => 'smg',
+        'quality' => 'Vanilla',
+        'image' => 'img/smg/mp7/mp7_vanilla.png'
+      ]);
+
+      /* MP9 */
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Airlock',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/mp9/mp9_airlock.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Goo',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp9/mp9_goo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Ruby Poison Dart',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp9/mp9_ruby_poison_dart.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Rose Iron',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp9/mp9_rose_iron.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Hypnotic',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp9/mp9_hypnotic.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Bulldozer',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/mp9/mp9_bulldozer.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Sand Scale',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_sand_scale.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Bioleak',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_bioleak.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Deadly Poison',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_deadly_poison.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Dart',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_dart.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Pandora\'s Box',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_pandoras_box.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Setting Sun',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_setting_sun.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Dark Age',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_dark_age.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Hot Rod',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/mp9/mp9_hot_rod.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Orange Peel',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/mp9/mp9_orange_peel.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Green Plaid',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp9/mp9_green_plaid.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Storm',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp9/mp9_storm.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Sand Dashed',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp9/mp9_sand_dashed.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9 | Dry Season',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/mp9/mp9_dry_season.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MP9',
+        'type' => 'mp9',
+        'category' => 'smg',
+        'quality' => 'Vanilla',
+        'image' => 'img/smg/mp9/mp9_vanilla.png'
+      ]);
+
+      /* PP-BIZON */
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Judgement of Anubis',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Covert',
+        'image' => 'img/smg/ppbizon/ppbizon_judgement_of_anubis.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | High Roller',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/ppbizon/ppbizon_high_roller.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Fuel Rod',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ppbizon/ppbizon_fuel_rod.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Blue Streak',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ppbizon/ppbizon_blue_streak.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Osiris',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ppbizon/ppbizon_osiris.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Antique',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ppbizon/ppbizon_antique.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Jungle Slipstream',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_jungle_slipstream.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Harvester',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_harvester.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Photic Zone',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_photic_zone.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Water Sigil',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_water_sigil.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Cobalt Halftone',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_cobalt_halftone.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Brass',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_brass.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Rust Coat',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_rust_coat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Modern Hunter',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ppbizon/ppbizon_modern_hunter.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Chemical Green',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ppbizon/ppbizon_chemical_green.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Night Ops',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ppbizon/ppbizon_night_ops.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Carbon Fiber',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ppbizon/ppbizon_carbon_fiber.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Bamboo Print',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ppbizon/ppbizon_bamboo_print.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Sand Dashed',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ppbizon/ppbizon_sand_dashed.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Urban Dashed',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ppbizon/ppbizon_urban_dashed.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Forest Leaves',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ppbizon/ppbizon_forest_leaves.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon | Irradiated Alert',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ppbizon/ppbizon_irradiated_alert.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'PP-Bizon',
+        'type' => 'ppbizon',
+        'category' => 'smg',
+        'quality' => 'Vanilla',
+        'image' => 'img/smg/ppbizon/ppbizon_vanilla.png'
+      ]);
+
+      /* P90 */
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Asiimov',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Covert',
+        'image' => 'img/smg/p90/p90_asiimov.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Death by Kitty',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Covert',
+        'image' => 'img/smg/p90/p90_death_by_kitty.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Shallow Grave',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/p90/p90_shallow_grave.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Shapewood',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/p90/p90_shapewood.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Trigon',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/p90/p90_trigon.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Cold Blooded',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/p90/p90_cold_blooded.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Emerald Dragon',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/p90/p90_emerald_dragon.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Death Grip',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/p90/p90_death_grip.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Chopper',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/p90/p90_chopper.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Virus',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/p90/p90_virus.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Blind Spot',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/p90/p90_blind_spot.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Grim',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_grim.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Elite Build',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_elite_build.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Module',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_module.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Desert Warfare',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_desert_warfare.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Teardown',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_teardown.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Glacier Mesh',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/p90/p90_glacier_mesh.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Leather',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/p90/p90_leather.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Ash Wood',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/p90/p90_ash_wood.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Fallout Warning',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/p90/p90_fallout_warning.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Storm',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/p90/p90_storm.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Scorched',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/p90/p90_scorched.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90 | Sand Spray',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/p90/p90_sand_spray.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'P90',
+        'type' => 'p90',
+        'category' => 'smg',
+        'quality' => 'Vanilla',
+        'image' => 'img/smg/p90/p90_vanilla.png'
+      ]);
+
+      /* UMP-45 */
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Primal Saber',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Classified',
+        'image' => 'img/smg/ump45/ump45_primal_saber.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Exposure',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ump45/ump45_exposure.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Scaffold',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ump45/ump45_scaffold.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Grand Prix',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Restricted',
+        'image' => 'img/smg/ump45/ump45_grand_prix.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Metal Flowers',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_metal_flowers.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Briefing',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_briefing.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Riot',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_riot.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Delusion',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_delusion.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Labyrinth',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_labyrinth.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Corporal',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_corporal.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Bone Pile',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_bone_pile.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Minotaur\'s Labyrinth',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_minotaurs_labyrinth.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Blaze',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/smg/ump45/ump45_blaze.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Carbon Fiber',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ump45/ump45_carbon_fiber.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Gunsmoke',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ump45/ump45_gunsmoke.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Fallout Warning',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Industrial',
+        'image' => 'img/smg/ump45/ump45_fallout_warning.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Indigo',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ump45/ump45_indigo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Scorched',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ump45/ump45_scorched.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Urban DDPAT',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ump45/ump45_urban_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45 | Caramel',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Consumer',
+        'image' => 'img/smg/ump45/ump45_caramel.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'UMP-45',
+        'type' => 'ump45',
+        'category' => 'smg',
+        'quality' => 'Vanilla',
+        'image' => 'img/smg/ump45/ump45_vanilla.png'
+      ]);
+
+      /* HEAVY */
+      /* MAG7*/
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Petroglyph',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/mag7/mag7_petroglyph.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Praetorian',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/mag7/mag7_praetorian.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Heat',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/mag7/mag7_heat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Bulldozer',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/mag7/mag7_bulldozer.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Hard Water',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_hard_water.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Sonar',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_sonar.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Cobalt Core',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_cobalt_core.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Firestarter',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_firestarter.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Heaven Guard',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_heaven_guard.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Memento',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_memento.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Counter Terrace',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_counter_terrace.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Hazard',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/mag7/mag7_hazard.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Silver',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/mag7/mag7_silver.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Metalic DDPAT',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/mag7/mag7_metalic_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Seabird',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/mag7/mag7_seabird.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Storm',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/mag7/mag7_storm.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Irradiated Alert',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/mag7/mag7_irradiated_alert.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7 | Sand Dune',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/mag7/mag7_sand_dune.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'MAG-7',
+        'type' => 'mag7',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/mag7/mag7_vanilla.png'
+      ]);
+
+      /* NOVA */
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Hyper Beast',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Classified',
+        'image' => 'img/heavy/nova/nova_hyper_beast.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Bloomstick',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Classified',
+        'image' => 'img/heavy/nova/nova_bloomstick.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Antique',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Classified',
+        'image' => 'img/heavy/nova/nova_antique.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Koi',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/nova/nova_koi.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Rising Skull',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/nova/nova_rising_skull.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Graphite',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/nova/nova_graphite.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Exo',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_exo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Ranger',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_ranger.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Ghost Camo',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_ghost_camo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Tempest',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_tempest.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Blaze Orange',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_blaze_orange.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Modern Hunter',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/nova/nova_modern_hunter.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Green Apple',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/nova/nova_green_apple.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Caged Steel',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/nova/nova_caged_steel.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Candy Apple',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/nova/nova_candy_apple.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Moon in Libra',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_moon_in_libra.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Sand Dune',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_sand_dune.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Predator',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_predator.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Polar Mesh',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_polar_mesh.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Forest Leaves',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_forest_leaves.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova | Walnut',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/nova/nova_walnut.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Nova',
+        'type' => 'nova',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/nova/nova_vanilla.png'
+      ]);
+
+      /* sawed off*/
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | The Kraken',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Covert',
+        'image' => 'img/heavy/sawedoff/sawedoff_the_kraken.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Wasteland Princess',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Classified',
+        'image' => 'img/heavy/sawedoff/sawedoff_wasteland_princess.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Limelight',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/sawedoff/sawedoff_limelight.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Serenity',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/sawedoff/sawedoff_serenity.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Highwayman',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/sawedoff/sawedoff_highwayman.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Orange DDPAT',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/sawedoff/sawedoff_orange_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Morris',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_morris.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Zander',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_zander.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Fubar',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_fubar.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Yorick',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_yorick.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Origami',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_origami.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | First Class',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_first_class.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Full Stop',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_full_stop.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Amber Fade',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_amber_fade.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Copper',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/sawedoff/sawedoff_copper.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Rust Coat',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/sawedoff/sawedoff_rust_coat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Snake Camo',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/sawedoff/sawedoff_snake_camo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Mosaico',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/sawedoff/sawedoff_mosaico.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Bamboo Shadow',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/sawedoff/sawedoff_bamboo_shadow.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Sage Spray',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/sawedoff/sawedoff_sage_spray.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Forest DDPAT',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/sawedoff/sawedoff_forest_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off | Irradiated Alert',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/sawedoff/sawedoff_irradiated_alert.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Sawed-Off',
+        'type' => 'sawedoff',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/sawedoff/sawedoff_vanilla.png'
+      ]);
+
+      /* XM1014 */
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Tranquility',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Classified',
+        'image' => 'img/heavy/xm1014/xm1014_tranquility.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Ziggy',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/xm1014/xm1014_ziggy.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Seasons',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/xm1014/xm1014_seasons.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Black Tie',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/xm1014/xm1014_black_tie.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Teclu Burner',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/xm1014/xm1014_teclu_burner.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Heaven Guard',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/xm1014/xm1014_heaven_guard.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Slipstream',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_slipstream.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Scumbria',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_scumbria.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Quicksilver',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_quicksilver.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Red Python',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_red_python.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Bone Machine',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_bone_machine.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Red Leather',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_red_leather.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | VariCamo Blue',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_varicamo_blue.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Blaze Orange',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/xm1014/xm1014_blaze_orange.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Blue Steel',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/xm1014/xm1014_blue_steel.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | CaliCamo',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/xm1014/xm1014_calicamo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Fallout Warning',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/xm1014/xm1014_fallout_warning.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Blue Spruce',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/xm1014/xm1014_blue_spruce.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Jungle',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/xm1014/xm1014_jungle.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Grassland',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/xm1014/xm1014_grassland.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014 | Urban Perforated',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/xm1014/xm1014_urban_perforated.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'XM1014',
+        'type' => 'xm1014',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/xm1014/xm1014_vanilla.png'
+      ]);
+
+      /* M249 */
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Emerald Poison Dart',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/m249/m249_emerald_poison_dart.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Nebula Crusader',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/m249/m249_nebula_crusader.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Spectre',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/m249/m249_spectre.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | System Lock',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/m249/m249_system_lock.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Magma',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/m249/m249_magma.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Shipping Forecast',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/m249/m249_shipping_forecast.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Gator Mesh',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/m249/m249_gator_mesh.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Blizzard Marbleized',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/m249/m249_blizzard_marbleized.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Impact Drill',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/m249/m249_impact_drill.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Contrast Spray',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/m249/m249_contrast_spray.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249 | Jungle DDPAT',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/m249/m249_jungle_ddpat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'M249',
+        'type' => 'm249',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/m249/m249_vanilla.png'
+      ]);
+
+      /* negev */
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Power Loader',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/negev/negev_power_loader.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Loudmouth',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Restricted',
+        'image' => 'img/heavy/negev/negev_loudmouth.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Dazzle',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_dazzle.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Man-o\'-war',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_man_o_war.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Bratatat',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_bratatat.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Desert Strike',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_desert_strike.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Terrain',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_terrain.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Anodized Navy',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Mil-Spec',
+        'image' => 'img/heavy/negev/negev_anodized_navy.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Nuclear Waste',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/negev/negev_nuclear_waste.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | CaliCamo',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/negev/negev_calicamo.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Palm',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Industrial',
+        'image' => 'img/heavy/negev/negev_palm.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev | Army Sheen',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Consumer',
+        'image' => 'img/heavy/negev/negev_army_sheen.png'
+      ]);
+      DB::table('weapons')->insert([
+        'name' => 'Negev',
+        'type' => 'negev',
+        'category' => 'heavy',
+        'quality' => 'Vanilla',
+        'image' => 'img/heavy/negev/negev_vanilla.png'
+      ]);
 
 
 
@@ -4937,8 +6492,180 @@ class WeaponsTableSeeder extends Seeder
           'image' => 'img/pistol/usps/usps_vanilla.png'
         ]);
 
+        /* GLOVES */
+        DB::table('weapons')->insert([
+          'name' => 'Bloodhound Gloves | Charred',
+          'type' => 'bloodhound',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/bloodhound/bloodhound_gloves_charred.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Bloodhound Gloves | Snakebite',
+          'type' => 'bloodhound',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/bloodhound/bloodhound_gloves_snakebite.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Bloodhound Gloves | Bronzed',
+          'type' => 'bloodhound',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/bloodhound/bloodhound_gloves_bronzed.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Bloodhound Gloves | Guerrilla',
+          'type' => 'bloodhound',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/bloodhound/bloodhound_gloves_guerrilla.png'
+        ]);
 
+        DB::table('weapons')->insert([
+          'name' => 'Driver Gloves | Crimson Weave',
+          'type' => 'driver',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/driver/driver_gloves_crimson_weave.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Driver Gloves | Lunar Weave',
+          'type' => 'driver',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/driver/driver_gloves_lunar_weave.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Driver Gloves | Diamondback',
+          'type' => 'driver',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/driver/driver_gloves_diamondback.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Driver Gloves | Convoy',
+          'type' => 'driver',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/driver/driver_gloves_convoy.png'
+        ]);
 
+        DB::table('weapons')->insert([
+          'name' => 'Hand Wraps | Slaughter',
+          'type' => 'wraps',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/wraps/hand_wraps_slaughter.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Hand Wraps | Badlands',
+          'type' => 'wraps',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/wraps/hand_wraps_badlands.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Hand Wraps | Leather',
+          'type' => 'wraps',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/wraps/hand_wraps_leather.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Hand Wraps | Spruce DDPAT',
+          'type' => 'wraps',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/wraps/hand_wraps_spruce_ddpat.png'
+        ]);
+
+        DB::table('weapons')->insert([
+          'name' => 'Moto Gloves | Spearmint',
+          'type' => 'moto',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/moto/moto_gloves_spearmint.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Moto Gloves | Cool Mint',
+          'type' => 'moto',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/moto/moto_gloves_cool_mint.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Moto Gloves | Boom!',
+          'type' => 'moto',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/moto/moto_gloves_boom.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Moto Gloves | Eclipse',
+          'type' => 'moto',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/moto/moto_gloves_eclipse.png'
+        ]);
+
+        DB::table('weapons')->insert([
+          'name' => 'Specialist Gloves | Crimson Kimono',
+          'type' => 'specialist',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/specialist/specialist_gloves_crimson_kimono.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Specialist Gloves | Emerald Web',
+          'type' => 'specialist',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/specialist/specialist_gloves_emerald_web.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Specialist Gloves | Fundation',
+          'type' => 'specialist',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/specialist/specialist_gloves_fundation.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Specialist Gloves | Forest DDPAT',
+          'type' => 'specialist',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/specialist/specialist_gloves_forest_ddpat.png'
+        ]);
+
+        DB::table('weapons')->insert([
+          'name' => 'Sport Gloves | Pandora\'s Box',
+          'type' => 'sport',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/sport/sport_gloves_pandoras_box.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Sport Gloves | Arid',
+          'type' => 'sport',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/sport/sport_gloves_arid.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Sport Gloves | Superconductor',
+          'type' => 'sport',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/sport/sport_gloves_superconductor.png'
+        ]);
+        DB::table('weapons')->insert([
+          'name' => 'Sport Gloves | Hedge Maze',
+          'type' => 'sport',
+          'category' => 'gloves',
+          'quality' => 'Extraordinary',
+          'image' => 'img/gloves/sport/sport_gloves_hedge_maze.png'
+        ]);
 
     }
 }

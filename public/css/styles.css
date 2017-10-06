@@ -1,15 +1,19 @@
 *{
   font-family: 'Open Sans', sans-serif;
-  font-size:16px;
+
 }
 
-body{
-  background-color: #263238;
-  color:white;
+html{
+  font-size:16px;
 }
 
 html,body,{ height:100%;margin:0;padding:0; }
 
+body{
+  background-color: #263238;
+  color:white;
+  font-size:3em;
+}
 
 a{
   color:white;
@@ -32,7 +36,6 @@ button.button, a.button{
  display:block;
  width:100%;
  height:25px;
- font-size:0.9em;
 }
 
 button.vote-btn{
@@ -66,9 +69,13 @@ a{
 }
 
 h1{
-  font-size:3em;
+  font-size:48px;
   margin-bottom:0;
   margin-top:0;
+}
+
+h2{
+  font-size:0.7em;
 }
 
 h1,h2,
@@ -115,16 +122,28 @@ h6 {
 	}
 }
 
+.weapon-name{
+  display:block;
+  font-size:0.3em;
+  margin-top:10px;
+  margin-bottom:10px;
+}
 
 .name{
   display:block;
-  font-size:17px;
+  font-size:0.3em;
+}
+
+.weapon-name-vote{
+  display:block;
+  font-size:0.6em;
   margin-top:10px;
   margin-bottom:10px;
 }
 
 .name-vote{
-  font-size:28px;
+  display:block;
+  font-size:0.6em;
 }
 
 .quality{
@@ -133,7 +152,6 @@ h6 {
   width:80%;
   margin:0 auto;
   margin-top:-10px;
-  font-size:0.8em;
 }
 
 .quality-vote{
@@ -144,7 +162,7 @@ h6 {
   background-color: #ffae39;
 }
 
-.Covert{
+.Covert,.Extraordinary{
   background-color: #eb4b4b;
 }
 
@@ -210,6 +228,11 @@ h6 {
   width:100%;
 }
 
+.container{
+  min-height:80%;
+  position:relative;
+}
+
 .container > .row {
   margin-bottom:20px;
 }
@@ -235,11 +258,14 @@ h6 {
 .vote{
   max-width:1200px;
   margin:0 auto;
-  margin-top:50px;
 }
 
 .vote>.weapon-bg{
   padding-top:20px;
+}
+
+.weapon-bg-vote{
+  border:0;
 }
 
 .weapon-bg-vote>img{
@@ -286,7 +312,6 @@ h6 {
 }
 
 .elo{
-  font-size:1.2em;
   width:50%;
   margin:0 auto;
   background-color: #263238;
@@ -299,6 +324,74 @@ h6 {
  -moz-transition: background 1s linear;
 }
 
-.elo>span{
-  font-size:1em;
+
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 2em;
+  }
+  h2{
+    font-size:1em;
+  }
+ .weapon-name{
+    font-size:0.4em;
+  }
+  .name{
+    font-size:0.4em;
+  }
+  .weapon-name-vote{
+    font-size:0.8em;
+  }
+  .name-vote{
+    font-size:0.8em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 1.5em;
+  }
+  .weapon-name{
+     font-size:1em;
+   }
+  .name{
+    font-size:0.8em;
+  }
+  .weapon-name-vote{
+    font-size:1.4em;
+  }
+  .name-vote{
+    font-size:1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+
+/* HEADER HEIGHT FIX */
+@media (max-height:800px){
+  .head{
+      height: 10vh;
+  }
+}
+
+@media (max-height:600px){
+  .head{
+      height: 12vh;
+  }
+}
+
+@media (max-height:450px){
+  .head{
+      height: 16vh;
+  }
+}
+
+@media (max-height:350px){
+  .head{
+      height: 20vh;
+  }
 }

@@ -12,6 +12,51 @@ use Zelenin\Elo\Match;
 class WeaponsController extends Controller
 {
 
+    public function vote(){
+      $wrand = rand(0,48);
+      $tabweapon=['bayonet','bowie','butterfly','falchion','flip','gut','huntsman','karambit','m9','shadowdaggers',
+      'ak47','m4a1s','m4a4','awp','aug','famas','g3sg1','galil','scar20','sg553','ssg08',
+      'cz75','deagle','dual','fiveseven','glock','p2000','p250','r8','tec9','usps',
+      'mac10','mp7','mp9','ppbizon','p90','ump45',
+      'mag7','nova','sawedoff','xm1014','m249','negev',
+      'bloodhound', 'driver', 'wraps', 'moto', 'specialist', 'sport'
+      ];
+      $weapons = Weapon::inRandomOrder()->where('type',$tabweapon[$wrand])->take(2)->get();
+      return view('vote', ['weapon1' => $weapons[0], 'weapon2' => $weapons[1]]);
+    }
+
+    public function storeVote(Request $request){
+      if($request->isMethod('post')){
+        $data = $request->all();
+        $w1 = Weapon::find($data['weapon1']);
+        $w2 = Weapon::find($data['weapon2']);
+        $weapon1 = new Player($w1->elo);
+        $weapon2 = new Player($w2->elo);
+
+        $match = new Match($weapon1, $weapon2);
+        if($data['win']=="weapon1"){
+          $match->setScore(1,0)->setK(32)->count();
+        }
+        if($data['win']=="weapon2"){
+          $match->setScore(0,1)->setK(32)->count();
+        }
+        $w1->elo = $weapon1->getRating();
+        $w2->elo = $weapon2->getRating();
+        $w1->save();
+        $w2->save();
+        return redirect()->back();
+      }
+    }
+
+    public function showCategory($weapon){
+      return view('weapons.category', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type', $weapon)->get()]);
+    }
+
+    public function showWeapon($weaponId){
+      $weapon = Weapon::find($weaponId);
+      return view('weapons.single', ['weapon' => $weapon]);
+    }
+
     public function home(){
       /* rifles */
       $ak47s = Weapon::orderBy('elo', 'desc')->where('type','ak47')->take(1)->get();
@@ -36,7 +81,13 @@ class WeaponsController extends Controller
       $karambits = Weapon::orderBy('elo', 'desc')->where('type','karambit')->take(1)->get();
       $m9s = Weapon::orderBy('elo', 'desc')->where('type','m9')->take(1)->get();
       $shadowdaggers = Weapon::orderBy('elo', 'desc')->where('type','shadowdaggers')->take(1)->get();
-      $shadowdaggers = Weapon::orderBy('elo', 'desc')->where('type','shadowdaggers')->take(1)->get();
+      /*gloves */
+      $bloodhounds = Weapon::orderBy('elo', 'desc')->where('type','bloodhound')->take(1)->get();
+      $drivers = Weapon::orderBy('elo', 'desc')->where('type','driver')->take(1)->get();
+      $wrapss = Weapon::orderBy('elo', 'desc')->where('type','wraps')->take(1)->get();
+      $motos = Weapon::orderBy('elo', 'desc')->where('type','moto')->take(1)->get();
+      $specialists = Weapon::orderBy('elo', 'desc')->where('type','specialist')->take(1)->get();
+      $sports = Weapon::orderBy('elo', 'desc')->where('type','sport')->take(1)->get();
       /* pistols */
       $cz75s = Weapon::orderBy('elo', 'desc')->where('type','cz75')->take(1)->get();
       $deagles = Weapon::orderBy('elo', 'desc')->where('type','deagle')->take(1)->get();
@@ -70,57 +121,17 @@ class WeaponsController extends Controller
         /* smgs */
         'mac10s' => $mac10s, 'mp7s' => $mp7s, 'mp9s' => $mp9s, 'ppbizons' => $ppbizons, 'p90s' => $p90s, 'ump45s' => $ump45s,
         /* heavy */
-        'mag7s' => $mag7s, 'novas' => $novas, 'sawedoffs' => $sawedoffs,'xm1014s' => $xm1014s, 'm249s', $m249s, 'negevs' => $negevs,
+        'mag7s' => $mag7s, 'novas' => $novas, 'sawedoffs' => $sawedoffs,'xm1014s' => $xm1014s, 'm249s' => $m249s, 'negevs' => $negevs,
         /* rifles */
         'ak47s' => $ak47s, 'm4a1ss' => $m4a1ss, 'm4a4s' => $m4a4s, 'awps' => $awps, 'augs' => $augs, 'famass' => $famass, 'g3sg1s' => $g3sg1s,
         'galils' => $galils, 'scar20s' => $scar20s, 'sg553s' => $sg553s, 'ssg08s' => $ssg08s,
         /* knives */
         'karambits' => $karambits, 'bayonets' => $bayonets, 'bowies' => $bowies, 'butterflies' => $butterflies,
         'falchions' => $falchions, 'flips' => $flips, 'guts' => $guts, 'huntsmans' => $huntsmans,
-        'm9s' => $m9s, 'shadowdaggers' => $shadowdaggers
+        'm9s' => $m9s, 'shadowdaggers' => $shadowdaggers,
+        /* gloves */
+        'bloodhounds' => $bloodhounds, 'drivers' => $drivers, 'wrapss' => $wrapss, 'motos' => $motos, 'specialists' => $specialists, 'sports' => $sports
     ]);
-    }
-
-    public function vote(){
-      $w = Weapon::inRandomOrder()->take(1)->first();
-      $weapon1 = Weapon::inRandomOrder()->where('type',$w->type)->first();
-      $weapon2 = Weapon::inRandomOrder()->where('type',$w->type)->first();
-      if($weapon2->id == $weapon1->id){
-        $weapon2 = Weapon::inRandomOrder()->where('type',$w->type)->first();
-      }
-      return view('vote', ['weapon1' => $weapon1, 'weapon2' => $weapon2]);
-    }
-
-    public function storeVote(Request $request){
-      if($request->isMethod('post')){
-        $data = $request->all();
-        $w1 = Weapon::find($data['weapon1']);
-        $w2 = Weapon::find($data['weapon2']);
-        $weapon1 = new Player($w1->elo);
-        $weapon2 = new Player($w2->elo);
-
-        $match = new Match($weapon1, $weapon2);
-        if($data['win']=="weapon1"){
-          $match->setScore(1,0)->setK(32)->count();
-        }
-        if($data['win']=="weapon2"){
-          $match->setScore(0,1)->setK(32)->count();
-        }
-        $w1->elo = $weapon1->getRating();
-        $w2->elo = $weapon2->getRating();
-        $w1->save();
-        $w2->save();
-        return redirect()->back();
-      }
-    }
-
-    public function showCategory($weapon){
-      return view('weapons.category', ['weapons' => Weapon::orderBy('elo', 'desc')->where('type', $weapon)->get()]);
-    }
-
-    public function showWeapon($weaponId){
-      $weapon = Weapon::find($weaponId);
-      return view('weapons.single', ['weapon' => $weapon]);
     }
 
 }
